@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="SampleTest1">
+	
+	<groups>
+		<define name="SmokeTest">
+			<include name="featureOne"></include>
+			
+		</define>
+		
+		<define name="RegressionTest">
+			
+		<include name="featureTwo"></include>
+		<include name="featureThree"></include>
+		<include name="featureFour"></include>
+		</define>
+		 
+		<run>
+			
+			<include name="featureOne"></include>
+			<include name="featureTwo"></include>
+			<include name="featureThree"></include>
+			<include name="featureFour"></include>
+			
+		</run>
+		
+		
+	</groups>
+  
+    <classes>
+      <class name="NewParascript.Sample1"/>
+      <class name="NewParascript.Sampletwo"/>
+      <class name="NewParascript.SampleThree"/>
+    </classes>
+  </test> <!-- SampleTest1 -->
+</suite> <!-- Suite -->
