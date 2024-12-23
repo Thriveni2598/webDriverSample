@@ -30,6 +30,7 @@ public class RemoteWebDriverTest {
 	  searchbox.sendKeys("Java tutorials");
 	  searchbox.submit();
 	  System.out.println("Page title..."+ driver.getTitle());
+	  System.out.println("Page title..."+ driver.getTitle());
 	  Assert.assertEquals(driver.getTitle(), "Java tutorials - Google Search");
 	  
   }
